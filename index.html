@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>SET Card Game</title>
+</head>
+<body class="animate-area">
+    <div id="background"></div>
+    <div id="backdrop"></div>
+    <div id="left">
+        <h1>SET Card Game</h1>
+        <a href="http://magliery.com/Set/SetRules.html">Rulebook</a><br><br>
+        <div id="options">
+            <label for="difficulty">Difficulty:&nbsp;</label>
+            <select name="difficulty" id="difficulty">
+                <option value="advanced">Advanced</option>
+                <option value="starter">Starter</option>
+            </select>
+            <label for="players">Number of Players:&nbsp;</label>
+            <select name="players" id="players">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <label for="mode">Game mode:&nbsp;</label>
+            <select name="mode" id="mode">
+                <option value="practice">Practice</option>
+                <option value="competetive">Competetive</option>
+            </select>
+        </div>
+        
+        <div id="names"></div>
+
+        <button id="start">Start</button>
+
+        <h2>Top 10 Best Times (Starter)</h2>
+        <div id="BestTimesEasy"></div>
+        <h2>Top 10 Best Times (Advanced)</h2>
+        <div id="BestTimesHard"></div>
+        <h2>Last 10 Multiplayer Games</h2>
+        <div id="LastTenGames"></div>
+
+    </div>
+
+    <div id="right">
+        <button id="back">Back</button>
+        <div id="timer"></div>
+        <div id="playerButtons"></div>
+
+        <div id="misc">
+            <button id="ITAS">Set possible in current deal?</button><p id="forITAS"></p>
+            <button id="showSet">Show a set</button>
+            <button id="moreCards">Deal 3 new cards </button>
+        </div>
+        
+        <div id="game"></div>
+        <div id="cardsLeft"></div>
+        <div id="endgame">
+            <p>Game Over</p>
+            <div id="finalMessage"></div>
+            <button id="again">Play Again</button>
+        </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
